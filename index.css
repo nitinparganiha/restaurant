@@ -1,0 +1,225 @@
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS variable  */
+:root{
+    --navbar-height:59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    
+}
+#logo{
+    margin: 2px 5px;
+}
+#logo img{
+    height: 50px;
+    width: 50px;
+    margin: 21px 21px;
+    
+}
+#navbar ul {
+    display: flex;
+    font-family: sans-serif;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.25;
+    top: 0px;
+    left: 0px;
+   
+        
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+#navbar ul li a{
+    padding: 3px 50px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 4px 20px black;
+}
+#navbar ul li a:hover{
+    color: rgb(10, 5, 85);
+    background-color: blanchedalmond;
+    
+}
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: blue;
+    text-align: justify;
+    height: 500px;
+
+}
+#home::before{
+    content: "";
+    background:url("salad.jpg");
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;    
+    background-repeat: no-repeat;
+    opacity:0.75;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-size: 2.6rem;
+    font-family: monospace;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: inherit;
+}
+/* services section  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 25px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(231, 222, 222);
+    margin-bottom: 20px;
+    
+    
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+    width: 200px;
+}
+#services{}
+#services{}
+#services{}
+#services{}
+/* client section  */
+#client-section{
+    position: relative;
+} 
+#client-section::before{
+content: "";
+position: absolute;
+background: url("Pizza.jpg");
+width:100%;
+height: 100%;
+z-index: -1;
+opacity: 0.4;
+} 
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#client .client-item{
+    padding: 25px;
+    
+}
+#client .client-item img{
+    height: auto;
+    margin: 5px;
+    display: block;
+    width: 180px;
+}
+/* contact section  */
+#contact{
+    position: relative;;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.66;
+    background: url("Contact.jpg")no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: initial;
+
+}
+footer{
+    background: black;
+    color: wheat;
+    padding: 9px 20px;
+
+    
+}
+
+/* Utiliti class  */
+.h-primary{
+    font-size: 3.5rem;
+    padding: 12px;
+    text-align: center;
+    justify-content: center;
+}
+.h-secondary{
+    font-size: 2.1rem;
+    padding: 10 px;
+    text-align: center;
+    font-family: fantasy; 
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid red;
+    background-color:brown;
+    margin: 17px;
+    font-size: 1.4rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+

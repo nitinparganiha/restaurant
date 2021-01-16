@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+.container{
+display: grid;
+grid-gap: 1rem;
+grid-template-areas: 
+'header header header header'
+'box1 box1'
+'box2 box2'
+'footer footer footer footer'
+;
+}
+#header{
+    grid-area: header;
+}
+#box1{
+    grid-area: box1;
+}
+#box2{
+    grid-area: box2;
+}
+.item{
+    background-color: red;
+    border: 2px solid black;
+    padding: 12px 23px;
+
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="header" class="item">
+        home about Contact Us Help 
+    </div>
+    <div id="box1" class="item">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus suscipit nesciunt labore.
+    </div>
+    <div id="box2" class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quibusdam nihil esse.
+    </div>
+    <footer class="item">
+        copyright@ 
+    </footer>
+</div>
+</body>
+</html>
