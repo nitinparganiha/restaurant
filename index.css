@@ -1,7 +1,7 @@
 /* CSS Reset  */
 *{
     margin: 0;
-    padding: 0;
+    padding: 100;
 }
 /* CSS variable  */
 :root{
